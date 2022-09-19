@@ -1,13 +1,231 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+caption,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  background-color: rgba(236, 230, 204, 0.25);
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.4px;
+}
+:root {
+  --white: rgb(255, 255, 255);
+  --bg: rgb(245, 245, 245);
+  --bg2: rgb(237, 237, 237);
+  --bg3: rgb(214, 214, 214);
+  --text: rgb(33, 33, 33);
+  --primary: rgb(224, 132, 209);
+
+  --border-radius: 8px;
+
+  --sm-spacing: 8px;
+  --md-spacing: 16px;
+  --lg-spacing: 32px;
+
+  --sm: 55.5em;
+  --md: 48em;
+  --lg: 64em;
+
+  --box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11),
+      0 4px 4px rgba(0, 0, 0, 0.11), 0 6px 8px rgba(0, 0, 0, 0.11), 0 8px 16px rgba(0, 0, 0, 0.11);
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+.elemental-node {
+  font-size: 15px;
+  box-sizing: border-box;
+  color: white;
+  padding: 4px 5px;
+  border-radius: 10px;
+  height: 50px;
+  width: 210px;
+  font-weight: bold;
+  text-align: center;
+  border: 3px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 35px 0;
+}
+
+
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+.thead {
+  position: sticky;
+  z-index: 100;
+}
+
+.trHead {
+  background: var(--bg);
+}
+
+.th {
+  padding: var(--sm-spacing);
+  color: var(--text);
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.trBody {
+  background: var(--white);
+}
+
+.td {
+  padding: var(--sm-spacing);
+  border: 1px solid var(--bg2);
+  font-size: 14px;
+}
+
+.table-container {
+  margin: 0 auto;
+  margin-top: 200px;
+  max-width: var(--sm);
+  padding: var(--sm-spacing);
+  background: var(--bg2);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  height: 50%;
+  overflow: auto;
+}
+
+.pro-item-content{
+
+  font-size: 2px;
+}
+
+.no-scroll::-webkit-scrollbar{
+  display: none !important;
+}
+.pro-sidebar-inner::-webkit-scrollbar{
+  display: none !important;
+}
+.pro-sidebar::-webkit-scrollbar{
+  display: none !important;
+}
+.pro-sidebar-layout::-webkit-scrollbar{
+  display: none !important;
+}
+.no-scroll{
+  -ms-overflow-style: none !important; /* IE and Edge */
+  scrollbar-width: none !important /* Firefox */
 }
